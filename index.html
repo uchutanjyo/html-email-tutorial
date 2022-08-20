@@ -20,94 +20,367 @@
 		border: 0;
 	}
 
+	.wrapper {
+		width: 100%;
+		table-layout: fixed;
+		background-color: #cccccc;
+		padding-bottom: 60px
+		/* make sure table isnt wider than the center tag it's inside of */
+	}
+	.main {
+		background-color: #fff;
+		margin: 0 auto;
+		width: 100%;
+		/* rec email template width  */
+		max-width: 600px;
+		/* make sure no spacing off to the side */
+		border-spacing: 0;
+		font-family: sans-serif;
+		color: #171a1b
+	}
+
+	.two-columns {
+		text-align: center;
+		/* to get rid of spacing around SM icons */
+		font-size: 0;
+	}
+
+	.two-columns .column {
+		/* columns within two-columns */
+		width: 100%;
+		/* so they fit inside the 600px width */
+		max-width: 300px;
+		/*  */
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;
+		
+		
+	}
+
+	.three-columns {
+		text-align: center;
+		font-size: 0;
+		padding: 15px 0 25px;
+		
+	}
+
+
+	.two-columns td {
+
+
+		}
+
+	button {
+		font-weight: bold; 
+		font-size: 18px
+	}
+
+	.button {
+		color: #171a1b;
+		background-color: white;
+		border-radius: 5%;
+		padding: 12px 20px;
+		font-weight: bold; 
+		font-size: 18px 
+
+	}
+
+	.button-dark {
+		color: white;
+		background-color: #171a1b;
+		border-radius: 5%;
+		padding: 12px 20px;
+	}
+
+
 </style>
 </head>
 <body>
 
+<center class="wrapper">
+
+	<table class="main" width="100%">
+
 
 
 <!-- TOP BORDER -->
-
+		<tr>
+			<td height="8" style="background-color: #171a1b;"></td>
+		</tr>
 
 <!-- LOGO SECTION -->
+		<tr>
+			<td style="padding: 14px 0 4px;">
+				<table width="100%">
 
+						<tr>
+							<td class="two-columns">
+								<table class="column">
+									<tr>
+										<!-- 1/2 distance of width-so center inside 300px column  -->
+										<td style="padding: 0 62px">
+											<a href="https://mattengerer.ca">
+												<img src="img/modern.jpg" alt="Modern Logo" width="180" title="Modern Logo"></a>
+										</td>
+									</tr>
+								</table>
+
+								<table class="column">
+									<tr>
+										<!-- similar width to logo -->
+										<td style="padding: 10px 72px">
+											<!-- fb -->
+											<a href="#">
+												<img src="img/black-facebook.png"
+												width="30" alt="">
+											</a>
+											<!-- twitter -->
+											<a href="#">
+												<img src="img/black-twitter.png"
+												width="30" alt="">
+											</a>
+											<!-- youtube -->
+											<a href="#">
+												<img src="img/black-youtube.png"
+												width="30" alt="">
+											</a>
+											<!-- linkedin -->
+											<a href="#">
+												<img src="img/black-linkedin.png"
+												width="30" alt="">
+											</a>
+											<!-- insta -->
+											<a href="#">
+												<img src="img/black-instagram.png"
+												width="30" alt="">
+											</a>
+
+
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+				</table>
+			</td>
+		</tr>
 
 <!-- BANNER IMAGE -->
-
+		<tr>
+			<td>
+				<a href="#">
+				<!-- mw 100% -- so it's never wider than the width of the window -->
+					<img src="img/banner.jpg" alt="" width="600"
+					style="max-width: 100%">
+				</a>
+			</td>
+		</tr>
 
 <!-- THREE COLUMN SECTION -->
+		<tr>
+			<td>
+				<table width="100%">
+					<tr> 
+						<td class="three-columns" style="text-align: center; padding: 15px 0 25px">
+						<!-- 1st column -->
+						<table class="column" style="width: 100%; max-width: 190px; display: inline-block; vertical-align: top; text-align: center">
+							<tr>
+								<td class="padding" style="padding: 15px;">
+									
+									<table class="content" style="font-size: 15px; line-height: 20px; padding: 0 5px; ">
+										<tr>
+											<td>
+												<a href="#"><img src="img/email.png" 
+													width="130" style="max-width: 130px"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p style="font-weight: bold; font-size: 17px;">E-Commerce</p>
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus autem ipsa voluptates tenetur.</p>
+												</td>
+											</tr>
+										</table>
 
+											</td>
+										</tr>
+									</table>
+
+
+						<!-- 2nd column -->
+						<table class="column" style="width: 100%; max-width: 190px; display: inline-block; vertical-align: top; text-align: center">
+							<tr>
+								<td class="padding" style="padding: 15px;">
+									
+									<table class="content" style="font-size: 15px; line-height: 20px; padding: 0 5px">
+										<tr>
+											<td>
+												<a href="#"><img src="img/settings.png" 
+													width="130" style="max-width: 130px"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p style="font-weight: bold; font-size: 17px;">E-Commerce</p>
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus autem ipsa voluptates tenetur.</p>
+												</td>
+											</tr>
+											</table>
+											</td>
+										</tr>
+									</table>
+
+
+						<!-- 3rd column -->
+						<table class="column" style="width: 100%; max-width: 190px; display: inline-block; vertical-align: top; text-align: center">
+							<tr>
+								<td class="padding" style="padding: 15px">
+									
+									<table class="content" style="font-size: 15px; line-height: 20px; padding: 0 5px">
+										<tr>
+											<td>
+												<a href="#"><img src="img/home.png" 
+													width="130" style="max-width: 130px"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p style="font-weight: bold; font-size: 17px;">E-Commerce</p>
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus autem ipsa voluptates tenetur.</p>
+												</td>
+											</tr>
+											</table>
+											</td>
+										</tr>
+
+								</td>
+					</tr>
+				</table>
+
+			</td>
+			
+		</tr>
 
 <!-- TWO COLUMN SECTION -->
+		<tr>
+			<td>
+				<table width="100%" style="background-color: #26292b; color: #fff">
+					<tr>
+						<td class="two-columns">
+							<!-- left side -->
+							<table class="column">
+								<tr>
+									<td style="padding: 15px">
 
+										<table class="content">
+											<tr>
+												<td>
+													<a href=""><img src="img/keyboard.jpg" alt="" width="260" style="max-width: 260px;"></a>
+												</td>
+											</tr>
+										</table>
+									</table>
+
+										<!-- right side -->
+										<table class="column">
+											<tr>
+												<td width='100%'; style="padding: 15px; text-align: center;">
+			
+													<table class="content">
+														<tr>
+															<td style="padding: 15px 15px">
+																<p style="font-weight: bold; font-size: 18px; text-align: center; ">
+																Create Custom Designs</p>
+																<p style="font-size: 14px">The beset. No, really, the best best best site in the whole world. Yeah.</p>
+																<button class="button"> Read More </button>
+															</td>
+														</tr>
+													</table>
+
+									</td>
+								</tr>
+							</table>
+
+						</td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
 
 <!-- TITLE, TEXT & BUTTON -->
+	<tr>
+		<td style="padding: 15px 15px">
+			<table width="100%">
+				<tr>
+					<td style="padding: 15px 15px; text-align:center">
 
+						<p style="font-size: 20px; font-weight: bold">HTML Email Template Course</p>
+						<p style="line-height: 23px; font-size: 15px; padding: 5px 0 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum perferendis, itaque quidem aut odio eos, nam repellat magni blanditiis recusandae incidunt quas, laborum fuga rem doloremque beatae qui dolorum expedita.</p>
+						<a href="#"><button class="button-dark">View Course</button></a>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
 
 <!-- FOOTER SECTION -->
 
+<tr>
+	<td style="background-color: #26292b">
+		<table width="100%">
 
+			<tr>
+				<td style="text-align: center; padding: 45px 25px; color: white">
+					<a href="#"><img src="img/modern-white.png" 
+						width="180" alt=""></a>
+						<p style='padding: 10px'>Modern HTML Email</p>
+						<p style='padding: 10px'>777 Corn Mount Ave.</p>
+						<a href="#">
+							<img src="img/white-facebook.png"
+							width="30" alt="">
+						</a>
+						<!-- twitter -->
+						<a href="#">
+							<img src="img/white-twitter.png"
+							width="30" alt="">
+						</a>
+						<!-- youtube -->
+						<a href="#">
+							<img src="img/white-youtube.png"
+							width="30" alt="">
+						</a>
+						<!-- linkedin -->
+						<a href="#">
+							<img src="img/white-linkedin.png"
+							width="30" alt="">
+						</a>
+						<!-- insta -->
+						<a href="#">
+							<img src="img/white-instagram.png"
+							width="30" alt="">
+						</a>
+
+				
+						
+				</td>
+			</tr>
+
+		</table>
+	</td>
+</tr>
+
+
+
+</center>
 
 </body>
 </html>
 
-<div style="position:absolute;bottom: 0;width: 100%;text-align: center;line-height: 40px;font-size: 25px;">
-	<a href="https://responsivehtmlemail.com/html-email-course/" target="_blank" style="color: #404577;text-decoration: none;">www.ResponsiveHTMLEmail.com</a>
-</div>
 
 
 
 
 
-<!-- Begin Social Share **you can remove this to center the template :) -->
-<style>
-	.btn:hover {
-		color: white;
-		opacity: .8;
-		transform: scale(1.02);
-	}
-</style>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-sm btn-danger" style="position: absolute; right: 7px; bottom: 7px;transition: transform .3s ease;" data-toggle="modal" data-target="#socialModal">
-  Subscribe!
-</button>
-<!-- Modal -->
-<div class="modal fade" id="socialModal" style="font-family: 'Poppins', sans-serif;">
-  <div class="modal-dialog modal-md" role="document">
-    <div class="modal-content" style="background-color: rgba(255, 255, 255, .9)!important;border: 0;">
-      <div class="modal-header" style="display: none;">
-        <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-			<div class="modal-body">
-				<div class="container-fluid text-center">
-					<div class="row justify-content-center px-0">
-						<div class="col-12">
-							<h2 class="pt-2 pb-4">Subscribe & turn on notifications! <i class="fas fa-bell"></i></h2>
-						</div>
-						<div class="col-lg-5 my-2">
-							<!-- YOUTUBE CHANNEL -->
-							<a class="btn btn-lg" href="https://www.youtube.com/channel/UCZWoe3ezD_dZTZgQnDyBgFQ/?sub_confirmation=1" target="_blank" style="background-color: red;color: white;transition: transform .3s ease;"><i class="fab fa-youtube"></i> Subscribe
-							</a>
-						</div>
-						<div class="col-12">
-							<h6 class="pt-4 pb-0"><a href="https://responsivehtmlemail.com/html-email-course/" target="_blank">www.responsivehtmlemail.com</a></h6>
-						</div>
-					</div>
-				</div>
-			</div>
-    </div>
-  </div>
-</div>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script>
-	$(this).delay(2000).queue(function() { /*-- CHANGE DELAY TIME --*/
-		$("#socialModal").modal('show');
-	});
-</script>
